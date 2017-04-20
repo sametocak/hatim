@@ -1,6 +1,20 @@
 Hatim Hesaplama Formülü
 =====================
 
+## Sözde Kod
+
+```pseudo
+  fonksiyon(x: Okunacak Sayı, y: Kişi Sayısı)
+    Eger (x % y) > 0:
+      a = floor(x/y);
+      return "(x%y) kişi a+1 kez, (y-(x%y)) kişi a kadar okusun"
+    Değilse:
+      return "y kişi (x/y) kez okusun";
+  end
+```
+
+=====================
+
 <b>İHLAS HATMİ:</b>
 ÖRN:
 100/22 = 4,545
