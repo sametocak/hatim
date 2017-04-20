@@ -20,8 +20,10 @@
 
       <label class="item item-input">
         <p style="text-align:center;color:#bbbbbb">Lütfen kişi sayısını yazın</p>
-        <span class="input-label" >Kişi Sayısı:</span>
-      <input type="tel">
+        <input [(ngModel)]="bol">
+        <button (click)="calc()" >Hesapla</button>
+        <br>
+        {{ result }}
       </label>
     </ion-card-content><br>
     <ion-card-content>

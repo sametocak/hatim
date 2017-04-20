@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { CalculatorService } from '../home/calculatorservice';
 
 /*
   Generated class for the Yasin page.
@@ -12,11 +13,18 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'yasin.html'
 })
 export class YasinPage {
+  
+  result = '';
+  bol = '';
+  
+  constructor(public navCtrl: NavController, public navParams: NavParams, public calculator: CalculatorService) {}
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+
+  calc(){
+    this.result = this.calculator.calculate(100, this.bol);
+  }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad YasinPage');
   }
 
 }

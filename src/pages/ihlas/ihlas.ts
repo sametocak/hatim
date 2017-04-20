@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { CalculatorService } from '../home/calculatorservice';
 
 
 @Component({
@@ -8,8 +8,16 @@ import { Component } from '@angular/core';
 })
 
 export class IhlasPage {
+  bol = '';
+  result = '';
 
-bol = '';
+  constructor (public calculator: CalculatorService){
+
+  }
+
+  calc(){
+    this.result = this.calculator.calculate(100, this.bol);
+  }
 
 
 }
