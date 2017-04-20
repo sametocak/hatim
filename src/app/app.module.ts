@@ -11,6 +11,7 @@ import { YasinPage } from '../pages/yasin/yasin';
 import { SalatPage } from '../pages/salat/salat';
 import { TevhidPage } from '../pages/tevhid/tevhid';
 import { DigerPage } from '../pages/diger/diger';
+import { CalculatorService } from '../pages/home/calculatorservice';
 
 
 
@@ -50,6 +51,6 @@ import { DigerPage } from '../pages/diger/diger';
     TevhidPage,
     DigerPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [CalculatorService, {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
 export class AppModule {}
