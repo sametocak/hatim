@@ -3,8 +3,8 @@ import {Http, Headers} from '@angular/http';
 
 @Injectable()
 export class CalculatorService {
-    
-    
+
+
     constructor() { }
 
     // Samet'in Verdiği Formül
@@ -15,14 +15,14 @@ export class CalculatorService {
                 var bolum = Math.floor(sayi / kisi);
                 var b = bolum + 1;
                 var c = kisi - a;
-                
-                return a + " kişi " + b + " kez, " + c + " kişi " + bolum + " kez okusun";
+
+                return a + " kişi " + b + " kez, diğerleri " + bolum + " kez okusun";
             }else{
                 var cal = sayi / kisi;
                 return kisi + " kişi " + cal + " kadar okusun";
             }
         }else{
-            return "Hatalı Argüman";
+            return "Fazla veya Hatalı Sayı girdiniz.";
         }
     }
 

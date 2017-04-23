@@ -29,7 +29,8 @@ $colors: (
   secondary:  #AABBCC,
   danger:     #000000,
   light:      #000000,
-  dark:       #000000
+  dark:       #000000,
+  buton:     #BFAB73
 );
 
 $tabs-background:#BFAB73;
@@ -39,6 +40,16 @@ $toolbar-background:#BFAB73;
 $button-ios-outline-background-color:#ffffff;
 $button-ios-outline-border-color:#BFAB73;
 $button-ios-outline-text-color:#BFAB73;
+
+.buton{
+  text-align: center;
+  background:#BFAB73;
+  color: #fff;
+}
+.tel{
+  border-radius: 5px;
+  border: solid 1px #bfab73;
+}
 
 .mail{
   color: #BFAB73;
@@ -73,10 +84,17 @@ p{
   font-family: "raleway";
   font-weight:400;
 }
+.sonuc-yazisi{
+text-align: center;
+font-family: "raleway";
+font-weight: bolder;
+font-size: 18px;
+}
+
 .hatimler{
   color: #BFAB73;
 }
- 
+
 //$font-family-base:             "bebas neue" !default;
 //$font-size-base:             1.1rem !default; // 1.4rem == 14px
 

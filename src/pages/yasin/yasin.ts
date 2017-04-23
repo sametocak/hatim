@@ -13,15 +13,15 @@ import { CalculatorService } from '../home/calculatorservice';
   templateUrl: 'yasin.html'
 })
 export class YasinPage {
-  
+
   result = '';
   bol = '';
-  
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public calculator: CalculatorService) {}
 
 
   calc(){
-    this.result = this.calculator.calculate(100, this.bol);
+    this.result = this.calculator.calculate(123, this.bol);
   }
 
   ionViewDidLoad() {

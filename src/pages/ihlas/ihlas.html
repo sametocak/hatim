@@ -18,15 +18,17 @@
     İhlas hatmi için lütfen aşağıdan sayı seçimi yapın (sayılar 34'e kadar olup, diğerleri dikkate alınmamıştır.)
     </ion-card-content>
 
-    <ion-card-content ng-controller="Ctrl">
+    <ion-card-content style="text-align:center" ng-controller="Ctrl">
 
       <label class="item item-input">
         <p style="text-align:center;color:#bbbbbb">Lütfen kişi sayısını belirleyin</p>
         <span class="input-label" >Kişi Sayısı:</span>
-        <input [(ngModel)]="bol">
-        <button (click)="calc()" >Hesapla</button>
-        <br>
-        {{ result }}
+      <div class="tel"><ion-input type="tel" [(ngModel)]="bol"></ion-input></div>
+        <button ion-button color="buton" round (click)="calc()">HESAPLA</button>
+  <br><br>
+        <div class="sonuc-yazisi">
+  {{ result }}
+        </div>
       </label>
      </ion-card-content><br>
 

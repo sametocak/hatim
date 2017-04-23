@@ -16,15 +16,17 @@
   Tevhid Hatmi için lütfen aşağıdan sayı giriniz.
     </ion-card-content>
 
-    <ion-card-content>
+    <ion-card-content style="text-align:center">
 
       <label class="item item-input">
         <p style="text-align:center;color:#bbbbbb">Lütfen kişi sayısını yazın</p>
         <span class="input-label" >Kişi Sayısı:</span>
-        <input [(ngModel)]="bol">
-        <button (click)="calc()" >Hesapla</button>
-        <br>
-        {{ result }}
+        <div class="tel"><ion-input type="tel" [(ngModel)]="bol"></ion-input></div>
+        <button ion-button color="buton" round (click)="calc()">HESAPLA</button>
+  <br><br>
+        <div class="sonuc-yazisi">
+  {{ result }}
+        </div>
       </label>
     </ion-card-content><br>
     <ion-card-content>
