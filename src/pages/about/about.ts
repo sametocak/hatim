@@ -6,7 +6,8 @@ import { AyetelPage } from '../ayetel/ayetel';
 import { YasinPage } from '../yasin/yasin';
 import { SalatPage } from '../salat/salat';
 import { TevhidPage } from '../tevhid/tevhid';
-import { DigerPage } from '../diger/diger';
+import { VallahuPage } from '../vallahu/vallahu';
+import { Yasin2Page } from '../yasin2/yasin2';
 
 @Component({
   selector: 'page-about',
@@ -16,8 +17,8 @@ export class AboutPage {
 
   constructor(public navCtrl: NavController) {}
 
-  nextPageDiger(){
-  this.navCtrl.push(DigerPage);
+  nextPageVallahu(){
+  this.navCtrl.push(VallahuPage);
   }
 
   nextPageIhlas(){
@@ -29,6 +30,10 @@ export class AboutPage {
   nextPageYasin(){
   this.navCtrl.push(YasinPage);
   }
+  nextPageYasin2(){
+  this.navCtrl.push(Yasin2Page);
+  }
+
   nextPageSalat(){
   this.navCtrl.push(SalatPage);
   }

@@ -10,7 +10,8 @@ import { AyetelPage } from '../pages/ayetel/ayetel';
 import { YasinPage } from '../pages/yasin/yasin';
 import { SalatPage } from '../pages/salat/salat';
 import { TevhidPage } from '../pages/tevhid/tevhid';
-import { DigerPage } from '../pages/diger/diger';
+import { VallahuPage } from '../pages/vallahu/vallahu';
+import { Yasin2Page } from '../pages/yasin2/yasin2';
 import { CalculatorService } from '../pages/home/calculatorservice';
 
 
@@ -29,7 +30,8 @@ import { CalculatorService } from '../pages/home/calculatorservice';
     YasinPage,
     SalatPage,
     TevhidPage,
-    DigerPage
+    VallahuPage,
+    Yasin2Page
   ],
   imports: [
 
@@ -49,7 +51,8 @@ import { CalculatorService } from '../pages/home/calculatorservice';
     YasinPage,
     SalatPage,
     TevhidPage,
-    DigerPage
+    VallahuPage,
+    Yasin2Page
   ],
   providers: [CalculatorService, {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

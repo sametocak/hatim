@@ -16,10 +16,10 @@ export class CalculatorService {
                 var b = bolum + 1;
                 var c = kisi - a;
 
-                return a + " kişi " + b + " kez, diğerleri " + bolum + " kez okusun";
+                return c + " kişi "+ bolum + " kez, diğerleri " + b + " kez okusun";
             }else{
                 var cal = sayi / kisi;
-                return kisi + " kişi " + cal + " kadar okusun";
+                return kisi + " kişi " + cal + " kere okusun";
             }
         }else{
             return "Fazla veya Hatalı Sayı girdiniz.";
